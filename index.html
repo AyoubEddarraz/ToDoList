@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <!-- Settings Box -->
+
+  <div class="settingsBox">
+    <div class="iconeSettingsBox">
+      <i class="fas fa-cog" id="iconeShowSettingsBox"></i>
+    </div>
+    <div class="changeAudio">
+      <h3>Change Audio</h3>
+      <div class="boxColor">
+        <div id="ChangeColor" class="colorBlack"></div>
+        <div id="ChangeColor2" class="colorWhite"></div>
+      </div>
+    </div>
+    <div class="created">
+      created By Ayoub Eddarraz&copy;
+    </div>
+  </div>
+
+  <!-- End Settings Box -->
+
+  <!-- Rappelle Task -->
+
+  <div class="rappelleTask">
+    <div class="rappelleTaskContent">
+      <i class="fas fa-stopwatch iconeRappelle"></i>
+      <h2>Check your Tasks</h2>
+      <button id="closeRappelle">close</button>
+    </div>
+  </div>
+
+  <!-- End Rappelle Task -->
+
+  <!-- Sound Correct -->
+
+  <audio src="mp3/sound1.mp3" id="sound1"></audio>
+  <audio src="mp3/clock.mp3" id="sound2"></audio>
+
+  <!-- End Sound Correct -->
+
+  <!-- Element Exsiste -->
+
+  <div id="Showexsiste" class="exsiste">
+    <h3>This Element Already Exsiste</h3>
+  </div>
+
+  <!-- End Element Exsiste -->
+
+  <!-- input empty -->
+
+  <div id="empty" class="exsiste">
+    <h3>the Input Value Is Empty</h3>
+  </div>
+  
+  <!-- End input empty -->
+
+  <!-- bar info task -->
+
+  <div class="info-task">
+    <div class="infoTaskContainer hero-img">
+      <h5 style="background-color: black; border-radius: 9999px; padding: .5rem 1rem; margin-bottom: 1rem; text-align: center;">NB : Rest every 45 minutes</h2>
+      <div class="inputTask ask">
+        <label for="task" class="parte1">Task : </label>
+        <input type="text" id="task" class="parte2">
+      </div>
+      <div class="timeTask ask">
+        <label for="timeTask" class="parte1">Time (Minutes):</label>
+        <select name="timeTask" id="timeTask" class="parte2">
+          <option value="not">Not R'appelle</option>
+        </select>
+      </div>
+      <div class="SaveCansel ask">
+        <button id="save">Save</button>
+        <button id="cancel">cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- End bar info task -->
+
+
+  <!-- Section Header -->
+
+  <header>
+    <h2>To-Do List</h2>
+  </header>
+
+  <!-- End Section Header -->
+  
+  <!-- Section Of background And button Add Task -->
+
+  <div class="button-ad-task">
+    <button id="addTask" class="hero-img">+</button>
+  </div>
+
+  <!-- End Section Of background And button Add Task -->
+
+  <!-- Section for Show All Task -->
+
+  <div class="show-task-container"></div>
+
+  <!-- End Section for Show All Task -->
+
+  <!-- State Of task -->
+
+  <div class="show-task-case">
+    <div>Task : <span id="numberOfTask">0</span></div>
+    <div>Task completed : <span id="completedTask">0</span></div>
+  </div>
+
+  <!-- End State Of task -->
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+</body>
+</html>
